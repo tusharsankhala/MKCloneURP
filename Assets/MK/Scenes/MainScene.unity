@@ -213,7 +213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58988770}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -1.6}
+  m_LocalPosition: {x: 0, y: 0, z: -1.83}
   m_LocalScale: {x: 11, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -280,6 +280,23 @@ Transform:
   m_Father: {fileID: 315491394}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -100, z: 0}
+--- !u!1 &297799752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7277308018718765399, guid: 51b9d793af3c8d9449e6828038f64a8a, type: 3}
+  m_PrefabInstance: {fileID: 7511820318182364914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &297799754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297799752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccc246e3db204d47af8e6ecc20b6f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &315491393
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +691,7 @@ GameObject:
   - component: {fileID: 2138677393}
   - component: {fileID: 2138677392}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: Main Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -692,16 +709,16 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 4
+  m_Intensity: 5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.42
     m_Bias: 0.02
     m_NormalBias: 0.1
     m_NearPlane: 0.1
@@ -773,6 +790,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 159966148}
     m_Modifications:
+    - target: {fileID: 3217902790553791829, guid: 9c363376feb1bab4fa7441d49159b6ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5a68cda7a8b28c4d9584c666c2f91c6, type: 2}
+    - target: {fileID: 3217902790553791829, guid: 9c363376feb1bab4fa7441d49159b6ce, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: f92c3b94e5e3f7b4bbeae46ff8288b84, type: 2}
     - target: {fileID: 3471658299443806282, guid: 9c363376feb1bab4fa7441d49159b6ce, type: 3}
       propertyPath: m_Name
       value: AlienSoldier
@@ -814,6 +839,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1156693106}
     m_Modifications:
+    - target: {fileID: 1119518344165223794, guid: 51b9d793af3c8d9449e6828038f64a8a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: de293b72669ce37478ba4c5a007e7fe9, type: 2}
     - target: {fileID: 7277308018718765399, guid: 51b9d793af3c8d9449e6828038f64a8a, type: 3}
       propertyPath: m_Name
       value: Eve_j_gonzales
